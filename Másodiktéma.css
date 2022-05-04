@@ -1,0 +1,25 @@
+div.nagydiv {  
+    margin:0 auto;  
+    text-align: center;
+    width: 800px
+;   height: 800px;
+    float:inline-start;
+    border:solid 2px
+}
+
+
+body {
+    background-image: url("https://i.imgur.com/UvexvHR.png");
+    background-repeat: no-repeat;
+}
+
+
+div.index {
+
+    background-color: rgb(42, 121, 51);
+    width: 200px;
+    height: 200px;
+    border:solid 2px
+
+
+}
