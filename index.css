@@ -72,11 +72,12 @@ div.lablec {
 }
 
 ul {
+    position: absolute;
     max-width: 108vh;
     max-height: 100%;
     border-radius: 5px;
     list-style-type: none;
-    margin: 0;
+    margin: 2%;
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -84,20 +85,28 @@ ul {
   
 li {
     float: left;
+    
 }
   
 li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 30px 80px;
+    padding: 20px 60px;
     text-decoration: none;
+    font-size: 29.5px;
+    line-height: 29.5px;
+    transition: font-size, 0.5s;
 }
-  
-li a:hover:not(.active) {
-    background-color: #111;
-}
-  
+
 .active {
-    background-color: #04AA6D;
+    font-size: 35px;
+    line-height: 35px;
+    padding: 17px 50px;
+}
+
+li a:hover:not(.active) {
+    font-size: 35px;
+    line-height: 35px;
+    padding: 17px 50px;
 }

@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .active {background-color: rgb(58, 163, 70);}
+        li a:hover:not(.active) {background-color: rgb(42, 121, 51);}
+        #grad1 {background-color:rgb(58, 163, 70); background-image: linear-gradient(rgb(58, 163, 70), rgb(37, 105, 44));}
+    </style>
 </head>
 <body>
     <div class="oldal">
-        <div class="fejlec" style="background-color:rgb(58, 163, 70);">
-            <table style="width: 1000px; height: 80px;">
-                <tr>
-                    <td style="background-color: rgb(47, 187, 63);"><a href="index.html">Index</a></td>
-                    <td><a href="elsotema.html">Első</a></td>
-                    <td><a href="masodiktema.html">Második</a></td>
-                    <td><a href="harmadiktema.html">Harmadik</a></td>
-                    <td><a href="negyediktema.html">Negyedik</a></td>
-                </tr>
-            </table>
-        </div>
-        <div class="tartalom" style="background-color: rgb(58, 163, 70);">
+        <ul>
+            <li><a class="active" href="index.html">Index</a></li>
+            <li><a href="elsotema.html">Első</a></li>
+            <li><a href="masodiktema.html">Második</a></li>
+            <li><a href="harmadiktema.html">Harmadik</a></li>
+            <li><a href="negyediktema.html">Negyedik</a></li>
+        </ul>
+
+        <div id="grad1" class="tartalom">
             <div class="idezet" style="background-color: rgb(42, 121, 51);">
                 <table>
                     <tr>
@@ -52,7 +54,7 @@
                 </table>
             </div>
 
-            <div class="lablec" style="background-color: rgb(42, 121, 51);">
+            <div class="lablec" style="background-color: rgb(31, 90, 38);">
                 <b><a href="https://www.minecraft.net/">https://www.minecraft.net/</a></b>
             </div>
         </div>
