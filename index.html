@@ -9,8 +9,9 @@
     <style>
         .active {background-color: rgb(58, 163, 70);}
         .tartalom {background-color: rgb(58, 163, 70);}
+        #grad1 {background-color:rgb(58, 163, 70); background-image: linear-gradient(rgb(58, 163, 70), rgb(37, 105, 44));}
         .idezet {background-color: rgb(42, 121, 51);}
-        .lablec {background-color: rgb(42, 121, 51);}
+        .lablec {background-color: rgb(37, 105, 44);}
         li a:hover:not(.active) {background-color: rgb(42, 121, 51);}
         body {background-image: url("background1.png");}
     </style>
@@ -22,15 +23,15 @@
             <li><a href="first.html">Játékról</a></li>
             <li><a href="second.html">Múltja</a></li>
             <li><a href="third.html">Szerverek</a></li>
-            <li><a href="fourth.html">???</a></li>
+            <li><a href="fourth.html">Modolás</a></li>
         </ul>
         
-        <div class="tartalom">
+        <div id="grad1" class="tartalom">
             <div class="idezet">
                 <table>
                     <tr>
                         <th>
-                            <img src="markus.PNG" alt="Markus kép" style="
+                            <img id="quotePicture" src="markus.PNG" alt="Markus kép" style="
                             width: 125px;
                             height: 125px;">
                         </th>
@@ -65,8 +66,8 @@
             <p>A játékot Windows, Mac, Linux gépekkel lehet játszani, illetve XBOX, PlayStation és Nintendo Switchel, <br> valamint Apple és Android telefonokkal, viszont ez egy másik verziója (Pocket Edition).</p>
             <table>
                 <tr>
-                    <img src="landscape.png" alt="Egy Minecraft világ vidéke, illetve az alapértelmezett character Steve" title="Egy Minecraft világ vidéke, illetve az alapértelmezett character Steve">
-                    <img style="width:300px; height:200px" src="header.png" alt="Promóciós borítókép, amiben látható a játék egy pár állata és ellensége" title="Promóciós borítókép, amiben látható egy pár állata és ellenség">
+                    <img style="position: absolute; left:180px" src="landscape.png" alt="Egy Minecraft világ vidéke, illetve az alapértelmezett character Steve" title="Egy Minecraft világ vidéke, illetve az alapértelmezett character Steve">
+                    <img style="position: absolute; left:520px; width:300px; height:200px" src="header.png" alt="Promóciós borítókép, amiben látható a játék egy pár állata és ellensége" title="Promóciós borítókép, amiben látható egy pár állata és ellenség">
                 </tr>
             </table>
 
