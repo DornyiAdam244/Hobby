@@ -1,0 +1,14 @@
+Hogyan is működik, és mi az a minecraft modification? (Továbbiakban modolás.)
+A modolás egy olyan rendkívül eltejedt módszer amellyel megváltoztatjuk a minecraft fájljait. Általában hozzáadunk, mint hogy elvegyünk, és van hogy rengeteg mod van egyszerre a minecraft fájlai  között, ezt nevezzük Modpackeknek.
+Ezek a modpackek nagyon komplexek tudnak lenni, és hatalmas gépigényűek általában.
+A legtöbb ilyen mod az alapjátéktól teljesen elérővé teszi a módosított minecraftunkat, mint kinézetileg vagy játékélmény során. 
+Vannak olyan modok amik rajzfilmeket dolgoznak fel, a rajzfilmben levő fegyvereket, karaktereket érhetjük el, akár a 
+rajzfilmben levő történet alapján is lehet menni, végigjátszani. Vannak olyan modok amik realisztikusabbá teszik, növelik a textúra minőséget, hangokat, és olyan tárgyakat
+és mechanikákat hozzáadva amik még középkoribbá, vagy modernebbé teszik a játékot. A játék önmagában is végtelen, no még a modokkal.
+---
+A játék modolása
+-A legfontosabb, hogy legyen egy biztonsági másolat a világainkról, és a minecraft fájlairól.
+-Legyen letöltve a minecraft forge. katt(https://files.minecraftforge.net/net/minecraftforge/forge/)
+-Keressük meg és töltsük le a kompatibilis és biztonságos modot, amit beraknánk. (a MoJang és most már Microsot utasítása szerint "on your own risk" tehát gyakorlatilag saját felelősségre modoljunk.)
+-Helyezzük be a /mods/ mappába a letöltött fájlokat.
+-Ha elindítottuk a játékot válasszuk ki a játszani szánt modot, és indítsuk a játékot. :)
