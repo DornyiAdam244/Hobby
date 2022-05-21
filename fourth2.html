@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .active {background-color: rgb(134, 82, 207);}
+        .tartalom {background-color: rgb(134, 82, 207);}
+        #grad1 {background-color:rgb(134, 82, 207); background-image: linear-gradient(rgb(134, 82, 207), rgb(121, 73, 187));}
+        .idezet {background-color: rgb(121, 73, 187);}
+        .lablec {background-color: rgb(121, 73, 187);}
+        li a:hover:not(.active) {background-color: rgb(121, 73, 187);}
+        body {background-image: url("background5.png");}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="index.html">Minecraft</a></li>
+            <li><a href="first.html">Játékról</a></li>
+            <li><a href="second.html">Múltja</a></li>
+            <li><a href="third.html">Szerverek</a></li>
+            <li><a class="active" href="fourth.html">Modolás</a></li>
+        </ul>
+        
+        <div id="grad1" class="tartalom">
+            <h1>A játék modolása (Tutorial)</h1>
+            <p>1. A legfontosabb, hogy legyen egy <b>biztonsági másolat</b> a világainkról, és a minecraft fájlairól.</p>
+            <p>2. Legyen letöltve a <a class="validLink" href="https://files.minecraftforge.net/net/minecraftforge/forge/">Minecraft Forge</a></p>
+            <img style="max-width: 400px; max-height: 150px" src="forge.PNG" alt="Forge kép">
+            <p>3. Keressük meg és töltsük le a kompatibilis és biztonságos modot, amit beraknánk. (a Mojang és most már Microsoft 
+            <br>utasítása  szerint <b>"on your own risk"</b> tehát gyakorlatilag saját felelősségre modoljunk.)</p>
+            <p>4. Helyezzük be a <b>/mods/ mappába</b> a letöltött fájlokat.</p>
+            <img style="max-width: 500px; max-height: 250px" src="mods.PNG" alt="/mods/ kép">
+            <p>5. Ha elindítottuk a játékot válasszuk ki a játszani szánt modot, és indítsuk a játékot.</p>
+                
+                <div class="pagination">
+                    <a href="fourth.html" >Modolásról</a>
+                    <a href="fourth2.html" class="active2">Tutorial</a>
+                </div>
+            </p>
+            <div class="lablec">
+                <b><a href="https://www.minecraft.net/">https://www.minecraft.net/</a></b>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

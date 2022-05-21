@@ -13,8 +13,17 @@ th {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-img {
+img:not(#quotePicture) {
     margin: 4px;
+    opacity: 0;
+    animation-name: pictureAnimacio;
+    animation-delay: .5s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+img:not(#gif) {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 p, h1 {
@@ -24,11 +33,18 @@ p, h1 {
 }
 
 h1 {
-    font-size: 150%
+    font-size: 100%;
+    animation-name: titleAnimacio;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
-p {
-    font-size: 125%;
+p, li.validList {
+    opacity: 0;
+    font-size: 115%;
+    animation-name: textAnimacio;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .main {
@@ -59,9 +75,14 @@ p {
     min-height: 8%;
     border-radius: 5px;
     text-align: center;
+    opacity: 0;
+    animation-name: quoteAnimacio;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .lablec {
+    opacity: 1;
     position: absolute;
     top: 760px;
     min-width: 100%;
@@ -73,33 +94,91 @@ p {
 a {
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:not(.validLink) {
     text-decoration: none;
 }
 
 ul {
+    position: absolute;
+    max-width: 108vh;
+    max-height: 100%;
+    border-radius: 5px;
     list-style-type: none;
-    margin: 37px;
-    width: 92.5%;
+    margin: 2%;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(58, 58, 58);
+    background-color: #333;
 }
   
 li {
     float: left;
+    
 }
   
 li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 20px 57px;
+    padding: 20px 52px;
     text-decoration: none;
-    font-size: 30px;
-    transition: padding 1s, font-size 1s;
+    font-size: 29.5px;
+    line-height: 29.5px;
+    transition: font-size, 0.5s;
 }
 
-li a:hover {
-    font-size: 40px;
-    padding: 15px 55px;
+.active {
+    font-size: 35px;
+    line-height: 35px;
+    padding: 17px 50px;
+}
+
+li a:hover:not(.active) {
+    font-size: 35px;
+    line-height: 35px;
+    padding: 17px 45px;
+}
+
+.pagination {
+    display: inline-block;
+    position: absolute;
+    top: 700px;
+    left: 435px;
+    background-color: rgb(60, 26, 107);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 15px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+  
+.pagination a.active2 {
+    background-color: rgb(74, 31, 133);
+}
+  
+.pagination a:hover:not(.active2) {background-color: rgb(86, 37, 155);}
+
+@keyframes textAnimacio {
+    from {opacity: 0; font-size: 115%;}
+    to {opacity: 1; font-size: 125%;}
+}
+
+@keyframes titleAnimacio {
+    from {font-size: 100%}
+    to {font-size: 150%}
+}
+
+@keyframes pictureAnimacio {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes quoteAnimacio {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
